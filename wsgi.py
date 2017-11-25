@@ -6,17 +6,11 @@ application = Flask(__name__)
 def hello():
     return "Contador de numeros Python"
 
-@application.route("/contar")
-def contar():
+    start_time = time()
     for i in range(1, 1000001):
-        return i
-
-start_time = time()
-contar()
-end_time = time() - start_time
-@application.route("/contar")
-def resul(end_time):
-    return "Tiempo de ejecucion: %.10f seconds." % end_time
+        print (i)
+    end_time = time() - start_time
+    print ("Tiempo de ejecucion: %.10f seconds." % end_time)
     
 
 if __name__ == "__main__":
