@@ -1,4 +1,5 @@
 from flask import Flask
+from time import time
 application = Flask(__name__)
 
 @application.route("/")
