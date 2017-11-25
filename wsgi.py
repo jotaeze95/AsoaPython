@@ -4,7 +4,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-   print "Contador de numeros Python"
+   print )"Contador de numeros Python"=
 
     start_time = time()
     for i in range(1, 1000001):
