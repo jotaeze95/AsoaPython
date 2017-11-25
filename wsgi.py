@@ -4,11 +4,11 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    return "Contador de numeros Python"
+   print "Contador de numeros Python"
 
     start_time = time()
     for i in range(1, 1000001):
-        return (i)
+        print (i)
     end_time = time() - start_time
     return ("Tiempo de ejecucion: %.10f seconds." % end_time)
     
