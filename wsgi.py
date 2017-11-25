@@ -9,14 +9,14 @@ def hello():
 @application.route("/")
 def contar():
     for i in range(1, 1000001):
-        return (i)
+        return i
 
 start_time = time()
 contar()
 end_time = time() - start_time
 @application.route("/")
 def resul(end_time):
-    return ("Tiempo de ejecucion: %.10f seconds." % end_time)
+    return "Tiempo de ejecucion: %.10f seconds." % end_time
     
 
 if __name__ == "__main__":
