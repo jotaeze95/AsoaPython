@@ -8,9 +8,9 @@ def hello():
 
     start_time = time()
     for i in range(1, 1000001):
-        print (i)
+        return (i)
     end_time = time() - start_time
-    print ("Tiempo de ejecucion: %.10f seconds." % end_time)
+    return ("Tiempo de ejecucion: %.10f seconds." % end_time)
     
 
 if __name__ == "__main__":
